@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web_app:
+    build: .
+    container_name: logcomex-frontend
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      - NUXT_HOST=0.0.0.0
+      - NUXT_PORT=3000
